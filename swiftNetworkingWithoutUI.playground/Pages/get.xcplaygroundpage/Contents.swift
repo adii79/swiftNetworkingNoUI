@@ -44,7 +44,9 @@ Task {
         let output:[dataStruct] = try await getMethod()
         
         for item in output {
+            print("-------")
             print(item.message)
+            print(item.number)
             print(item._id)
         }
 
